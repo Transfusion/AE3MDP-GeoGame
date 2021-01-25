@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference android:title="Number of simultaneous tasks"
+        android:persistent="false"
+        android:key="task_simul"
+        android:inputType="number"
+        android:summary="Maximum number of tasks open at once"></EditTextPreference>
+
+    <EditTextPreference android:title="Task Radius"
+        android:persistent="false"
+        android:key="task_radius"
+        android:inputType="number"
+        android:summary="Range in which tasks are randomly generated in meters"></EditTextPreference>
+
+    <EditTextPreference android:title="Update Time Interval"
+        android:persistent="false"
+        android:key="update_interval"
+        android:inputType="number"
+        android:summary="Frequency in miliseconds to check for location updates (longer consumes more battery)"></EditTextPreference>
+
+    <EditTextPreference android:title="Update Distance Interval"
+        android:persistent="false"
+        android:key="update_distance"
+        android:inputType="number"
+        android:summary="Minimum distance between location updates"></EditTextPreference>
+
+    <EditTextPreference android:title="Notification Range"
+        android:persistent="false"
+        android:key="notification_distance"
+        android:inputType="number"
+        android:summary="Distance in meters to any open task within which a notification will be shown"></EditTextPreference>
+
+    <EditTextPreference android:title="Task Completion Range"
+        android:persistent="false"
+        android:key="task_complete_radius"
+        android:inputType="number"
+        android:summary="Distance in meters within which tasks will be considered completed"></EditTextPreference>
+
+
+    <!--<CheckBoxPreference android:title="Application Updates"
+        android:defaultValue="false"
+        android:summary="This option if selected will allow the application to check for latest versions."
+        android:key="applicationUpdates" />-->
+    <!--<ListPreference     android:title="Download Details"
+        android:summary="Select the kind of data that you would like to download"
+        android:key="downloadType"
+        android:defaultValue="1"
+        android:entries="@array/listArray"
+        android:entryValues="@array/listValues" />-->
+</PreferenceScreen>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/activity_horizontal_margin">
+    <TextView
+        android:id="@+id/history_day"
+        android:text="history day"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_height="26dip" />
+
+    <TextView
+        android:id="@+id/history_num_completed"
+        android:text="history_num_compl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_below="@id/history_day"/>
+
+    <TextView
+        android:id="@+id/history_distance_travelled"
+        android:text="history_dist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_below="@id/history_day"
+        android:layout_toRightOf="@id/history_num_completed"
+        android:layout_marginLeft="12dip"/>
+</RelativeLayout>
